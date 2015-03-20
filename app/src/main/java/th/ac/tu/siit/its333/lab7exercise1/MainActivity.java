@@ -86,7 +86,7 @@ public class MainActivity extends ActionBarActivity {
         }
         else if(id == R.id.btPathum){
             if(lastBtn!=R.id.btPathum && time_end-time_start <= 60000) {
-                w.execute("http://ict.siit.tu.ac.th/~cholwich/nonthaburi.json", "Nonthaburi Weather");
+                w.execute("http://ict.siit.tu.ac.th/~cholwich/pathumthani.json", "Pathumthani Weather");
                 lastBtn = R.id.btPathum;
                 time_start = System.currentTimeMillis();
             }
